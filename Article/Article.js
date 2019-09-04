@@ -1,7 +1,4 @@
-import Header from '../Header';
-import Article from '../Article';
-/* This is the data we will be using to create our article components */
-/* Look over this data, then proceed to line 91*/
+
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
@@ -89,8 +86,17 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
+//data to for each
 
-const contArt = document.querySelector('.articles')
+data.forEach(item => {
+  console.log('creating panel:', item.title)
+  conArt.appendChild(art(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph));
+});
+
+const contArt = document.querySelector('.articles');
+//html tp add js function to
+
+
 function art(title, date, p1, p2, p3) {
   //adds elements not link named
   const article = document.createElement('div');
