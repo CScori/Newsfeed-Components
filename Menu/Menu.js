@@ -27,13 +27,12 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
- function comp = (menu, par) {
+const head = document.querySelector('.head');
+
+ function comp (data) {
    const drop = document.createElement('div');
    const line = document.createElement('ul');
-   
+
+   drop.classList.add('menu')
  };
- <div class="menu">
- <ul>
-   {each menu item as a list item}
- </ul>
-</div>
+ 

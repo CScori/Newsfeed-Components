@@ -1,3 +1,5 @@
+import Header from '../Header';
+import Article from '../Article';
 /* This is the data we will be using to create our article components */
 /* Look over this data, then proceed to line 91*/
 const data = [
@@ -87,7 +89,9 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
+function art (data, item) {
 
+};
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
   <div class="article">
