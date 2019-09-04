@@ -13,12 +13,15 @@ const menu = document.querySelector('.header');
 
 function createMenu (items) {
 const newMenu = document.createElement('div');
+newMenu.classList.add('menu');
+
 const list = document.createElement('ul');
+list.appendChild(newMenu);
 
-
-menuItems.forEach(data => {
+menuItems.forEach((items) => {
   const item = document.createElement('li');
-  menu.appendChild(newMenu(data.li))
+  item.textContent = items;
+  item.appendChild(list);
 });
 };
 
