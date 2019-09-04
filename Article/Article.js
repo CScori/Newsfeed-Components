@@ -84,6 +84,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Make Believe is Back',
+    date: 'Sparkle 50, 2019',
+    firstParagraph: `Lorem ipsum dolor amet sustainable everyday carry copper mug freegan kogi sriracha cred hot chicken blog kale chips ugh pok pok succulents flannel messenger bag. Helvetica aesthetic green juice, wolf chia typewriter dreamcatcher vinyl skateboard austin actually single-origin coffee pour-over williamsburg franzen. Flannel fanny pack heirloom shabby chic copper mug forage, ugh shaman af stumptown. Flexitarian shoreditch af paleo kale chips gluten-free jean shorts chartreuse letterpress bicycle rights enamel pin chambray.`,
+
+    secondParagraph: `Wayfarers keffiyeh yr put a bird on it 90's etsy man braid cronut affogato. Af quinoa aesthetic kickstarter unicorn deep v, snackwave narwhal bitters viral. Sriracha fanny pack listicle whatever VHS. Try-hard chicharrones dreamcatcher skateboard air plant swag meh next level retro. Selvage semiotics kale chips readymade, man braid organic keytar drinking vinegar. Scenester retro crucifix listicle chia. Ethical prism fingerstache bushwick shabby chic pitchfork, next level man bun street art four dollar toast photo booth cardigan mustache.`,
+
+    thirdParagraph: `Air plant tumeric try-hard, beard la croix woke poutine cornhole knausgaard distillery tbh normcore occupy blue bottle. Squid slow-carb kitsch lomo taiyaki normcore locavore everyday carry hot chicken taxidermy before they sold out affogato succulents. 90's synth tumeric ugh chambray, succulents activated charcoal. Chicharrones tattooed 90's art party deep v letterpress iceland shaman. Vape godard intelligentsia squid glossier chicharrones retro mixtape kitsch put a bird on it small batch coloring book iceland. Kombucha humblebrag chicharrones, migas hashtag gentrify bicycle rights pickled live-edge street art.`
   }
 ];
 //data to for each
