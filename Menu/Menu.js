@@ -19,11 +19,11 @@ newMenu.classList.add('menu');
 const list = document.createElement('ul');
 list.appendChild(newMenu);
 
-menuItems.forEach(items) {
-  const item = document.createElement('li');
-  item.appendChild(list)
-  item.textContent = 'items.item'
-};
+// MenuItems.forEach(items => {
+//   const item = document.createElement('li');
+//   item.appendChild(list)
+//   item.textContent = 'items.item'
+// };
 
 
 };

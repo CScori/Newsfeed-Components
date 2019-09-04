@@ -132,7 +132,11 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
     par3.textContent = thirdParagraph;
 
 //add aevent
-
+but.addEventListener('click', (e) => {
+  console.log('opening');
+  art.classList.toggle('.article-open');
+  art.classList.toggle('.close');
+})
 return art
 };
 
