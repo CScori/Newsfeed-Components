@@ -133,9 +133,9 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
 
 //add aevent
 but.addEventListener('click', (e) => {
-  console.log('opening');
-  art.classList.toggle('.article-open');
-  art.classList.toggle('.close');
+  console.log('opening', e.target);
+  art.classList.toggle('article-open');
+  art.classList.toggle('close');
 })
 return art
 };

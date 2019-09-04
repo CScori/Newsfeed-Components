@@ -11,22 +11,34 @@ let menuItems = [
 
 
 
-
 function createMenu (items) {
+  //pulls html
+  const menu = document.querySelector('.menu-button');
+//adds evend on html element
+menu.addEventListener('click', (e) => newMenu.classList.toggle('menu-open'));
+//creates dom element and class name
 const newMenu = document.createElement('div');
 newMenu.classList.add('menu');
-
+// creates ul list and adds to dom creation
 const list = document.createElement('ul');
 list.appendChild(newMenu);
 
+const item = document.createElement('li');
+item.appendChild(list);
+
+items.forEach(data => {
+  item.textContent = data;
+})
 // MenuItems.forEach(items => {
 //   const item = document.createElement('li');
 //   item.appendChild(list)
 //   item.textContent = 'items.item'
 // };
 
-
+return newMenu
 };
+
+
 
 /* 
 
