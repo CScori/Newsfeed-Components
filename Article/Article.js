@@ -88,19 +88,16 @@ const data = [
 ];
 //data to for each
 
-data.forEach(item => {
-  console.log('creating panel:', item.title)
-  conArt.appendChild(art(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph));
-});
+
 // for each to add to component
 
-const contArt = document.querySelector('.articles');
+const article = document.querySelector('.articles');
 //html tp add js function to
 
 
-function art(title, date, p1, p2, p3) {
+function createArticle(title, date, p1, p2, p3) {
   //adds elements not link named
-  const article = document.createElement('div');
+  const art = document.createElement('div');
   const ttl = document.createElement('h2');
   const dt = document.createElement('p');
   const par1 = document.createElement('p');
@@ -110,16 +107,15 @@ function art(title, date, p1, p2, p3) {
 
 
   //adds formation
-  article.appendChild('conArt');
-  article.appendChild('ttl');
-  article.appendChild('dt');
-  article.appendChild('par1');
-  article.appendChild('par2');
-  article.appendChild('par3');
-  article.appendChild('but');
+  art.appendChild('ttl');
+  art.appendChild('dt');
+  art.appendChild('par1');
+  art.appendChild('par2');
+  art.appendChild('par3');
+  art.appendChild('but');
 
   //adds class names
-  article.classList.add('article');
+  art.classList.add('article');
   dt.classList.add('date');
   but.classList.add('expandButton');
 
@@ -129,17 +125,20 @@ function art(title, date, p1, p2, p3) {
     par1.textContent = p1;
     par2.textContent = p2;
     par3.textContent = p3;
-//expandButton span. This event listener should toggle the class 'article-open' on the 'article' div. add aevent
 
-article.addEventListener('click', (e) => {
+//add aevent
+art.addEventListener('click', (e) => {
 console.log('im opening');
 expandButton.classList.toggle('article-open');
 expandButton.classList.toggle('article-open');
 
-article.classList.toggle('toggle-on');
+art.classList.toggle('toggle-on');
 });
-    return art
+return art
 };
+
+
+// for each to add to component
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below:
 
   <div class="article">
