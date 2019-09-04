@@ -9,7 +9,12 @@ let menuItems = [
   'Log Out'
 ];
 
-const menu = document.querySelector('.header');
+const menu = document.querySelector('.menu-button');
+menu.addEventListener('click', (e) => {
+  console.log('Menu options');
+  NewMenu.classList.toggle('menu-open');
+  //Step 4: add a click event listener to the menu button. When clicked it should toggle the class 'menu--open' on the menu (your div with a 'menu' class).
+})
 
 function createMenu (items) {
 const newMenu = document.createElement('div');
@@ -23,6 +28,9 @@ menuItems.forEach((items) => {
   item.textContent = items;
   item.appendChild(list);
 });
+
+
+return newMenu
 };
 
 /* 

@@ -112,7 +112,12 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
 
 
   //adds formation
- 
+  art.appendChild(ttl);
+  art.appendChild(dt);
+  art.appendChild(par1);
+  art.appendChild(par2);
+  art.appendChild(par3);
+  art.appendChild(but);
 
   //adds class names
   art.classList.add('article');
