@@ -91,7 +91,7 @@ const data = [
 ];
 
 const contArt = document.querySelector('.articles')
-function art (title, date, p1, p2, p3) {
+function art(title, date, p1, p2, p3) {
   //adds elements not link named
   const article = document.createElement('div');
   const title = document.createElement('h2');
@@ -100,11 +100,17 @@ function art (title, date, p1, p2, p3) {
   const par2 = document.createElement('p');
   const par3 = document.createElement('p');
   const but = document.createElement('span');
-//adds formation
-
+  //adds formation
+  article.appendChild('conArt');
+  article.appendChild('title');
+  article.appendChild('date');
+  article.appendChild('par1');
+  article.appendChild('par2');
+  article.appendChild('par3');
+  article.appendChild('but');
 };
-/* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
-  
+/* Step 1: Create a function that creates a component. You will want your component to look like the template below:
+
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
