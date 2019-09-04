@@ -108,6 +108,10 @@ function art(title, date, p1, p2, p3) {
   article.appendChild('par2');
   article.appendChild('par3');
   article.appendChild('but');
+  //adds class names
+  article.classList.add('article');
+  date.classList.add('date');
+  but.classList.add('expandButton');
 };
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below:
 
