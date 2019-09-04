@@ -92,6 +92,7 @@ data.forEach(item => {
   console.log('creating panel:', item.title)
   conArt.appendChild(art(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph));
 });
+// for each to add to component
 
 const contArt = document.querySelector('.articles');
 //html tp add js function to
@@ -106,6 +107,7 @@ function art(title, date, p1, p2, p3) {
   const par2 = document.createElement('p');
   const par3 = document.createElement('p');
   const but = document.createElement('span');
+
   //adds formation
   article.appendChild('conArt');
   article.appendChild('title');
@@ -114,10 +116,20 @@ function art(title, date, p1, p2, p3) {
   article.appendChild('par2');
   article.appendChild('par3');
   article.appendChild('but');
+
   //adds class names
   article.classList.add('article');
   date.classList.add('date');
   but.classList.add('expandButton');
+
+//sets content from array
+    title.textContent = title;
+    date.textContent = date;
+    par1.textContent = p1;
+    par2.textContent = p2;
+    par3.textContent = p3;
+
+    return art
 };
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below:
 
