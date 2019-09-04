@@ -88,14 +88,10 @@ const data = [
 ];
 //data to for each
 
-
-// for each to add to component
-
 const article = document.querySelector('.articles');
 //html tp add js function to
 
-
-function createArticle(title, date, p1, p2, p3) {
+function createArticle(title, date, firstParagraph, secondParagraph, thirdParagraph) {
   //adds elements not link named
   const art = document.createElement('div');
   const ttl = document.createElement('h2');
@@ -107,12 +103,7 @@ function createArticle(title, date, p1, p2, p3) {
 
 
   //adds formation
-  art.appendChild('ttl');
-  art.appendChild('dt');
-  art.appendChild('par1');
-  art.appendChild('par2');
-  art.appendChild('par3');
-  art.appendChild('but');
+ 
 
   //adds class names
   art.classList.add('article');
@@ -122,9 +113,9 @@ function createArticle(title, date, p1, p2, p3) {
 //sets content from array
     ttl.textContent = title;
     dt.textContent = date;
-    par1.textContent = p1;
-    par2.textContent = p2;
-    par3.textContent = p3;
+    par1.textContent = firstParagraph;
+    par2.textContent = secondParagraph;
+    par3.textContent = thirdParagraph;
 
 //add aevent
 art.addEventListener('click', (e) => {
@@ -137,6 +128,9 @@ art.classList.toggle('toggle-on');
 return art
 };
 
+data.forEach(element => {
+  article.appendChild(createArticle(element.title, element.date, element.firstParagraph, element.secondParagraph, element.thirdParagraph));
+});
 
 // for each to add to component
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below:
