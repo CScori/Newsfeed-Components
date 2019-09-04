@@ -101,17 +101,18 @@ const contArt = document.querySelector('.articles');
 function art(title, date, p1, p2, p3) {
   //adds elements not link named
   const article = document.createElement('div');
-  const title = document.createElement('h2');
-  const date = document.createElement('p');
+  const ttl = document.createElement('h2');
+  const dt = document.createElement('p');
   const par1 = document.createElement('p');
   const par2 = document.createElement('p');
   const par3 = document.createElement('p');
   const but = document.createElement('span');
 
+
   //adds formation
   article.appendChild('conArt');
-  article.appendChild('title');
-  article.appendChild('date');
+  article.appendChild('ttl');
+  article.appendChild('dt');
   article.appendChild('par1');
   article.appendChild('par2');
   article.appendChild('par3');
@@ -119,16 +120,24 @@ function art(title, date, p1, p2, p3) {
 
   //adds class names
   article.classList.add('article');
-  date.classList.add('date');
+  dt.classList.add('date');
   but.classList.add('expandButton');
 
 //sets content from array
-    title.textContent = title;
-    date.textContent = date;
+    ttl.textContent = title;
+    dt.textContent = date;
     par1.textContent = p1;
     par2.textContent = p2;
     par3.textContent = p3;
+//expandButton span. This event listener should toggle the class 'article-open' on the 'article' div. add aevent
 
+article.addEventListener('click', (e) => {
+console.log('im opening');
+expandButton.classList.toggle('article-open');
+expandButton.classList.toggle('article-open');
+
+article.classList.toggle('toggle-on');
+});
     return art
 };
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below:
