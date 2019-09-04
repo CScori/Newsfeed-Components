@@ -9,7 +9,7 @@ let menuItems = [
   'Log Out'
 ];
 
-
+const header = document.querySelector('.header')
 
 function createMenu (items) {
   //pulls html
@@ -38,7 +38,7 @@ items.forEach(data => {
 return newMenu
 };
 
-
+header.appendChild(createMenu(menuItems));
 
 /* 
 
