@@ -27,12 +27,5 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
-const head = document.querySelector('.head');
 
- function comp (data) {
-   const drop = document.createElement('div');
-   const line = document.createElement('ul');
-
-   drop.classList.add('menu')
- };
  

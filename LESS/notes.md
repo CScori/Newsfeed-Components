@@ -18,4 +18,9 @@ functin(param of data, param of data) {
     return the fnc name;
 }
 
-html.appendChild(fnc(paramor data))
+html.appendChild(fnc(param or data)) hard code
+
+loop throo set
+htmldata.forEach(data => {
+    html.appendChild(array.key, array.key, etc)
+})

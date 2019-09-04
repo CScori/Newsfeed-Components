@@ -89,7 +89,18 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
-function art (data, item) {
+
+const contArt = document.querySelector('.articles')
+function art (title, date, p1, p2, p3) {
+  //adds elements not link named
+  const article = document.createElement('div');
+  const title = document.createElement('h2');
+  const date = document.createElement('p');
+  const par1 = document.createElement('p');
+  const par2 = document.createElement('p');
+  const par3 = document.createElement('p');
+  const but = document.createElement('span');
+//adds formation
 
 };
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -97,12 +108,9 @@ function art (data, item) {
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
-
     {three separate paragraph elements}
-
     <span class='expandButton'></span>
   </div>
-
   Hint: You will need to use createElement more than once here!
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
